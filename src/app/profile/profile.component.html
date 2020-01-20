@@ -1,0 +1,17 @@
+<div>
+  <h4>Profile Form</h4>
+  <form [formGroup]="profileForm" (ngSubmit)="updateProfile(profileForm)">
+    <input type="text" formControlName="name">
+    <input type="text" formControlName="mobile">
+    <button type="submit">Update</button>
+  </form>
+
+
+  <br>
+
+  <form [formGroup]="addressForm" (ngSubmit)="updateAddressForm(addressForm)">
+    <input type="text" formControlName="address">
+    <input type="text" formControlName="landmark">
+    <button type="submit">Submit Address</button>
+  </form>
+</div>
